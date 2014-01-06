@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<div class="sixteen columns">
+
+	<div class="row"> 
+
+		<div class="four columns alpha">
+
+			<img height="150px" src="{{ page.logo }}" alt="">
+
+		</div>
+
+		<div class="twelve columns omega" id="headtext">
+			
+			<h2>{{ page.title }}</h2>
+			<p>{{ page.address }}</p>
+
+		</div>
+
+</div>
+
+
+
+<div class="four columns alpha">
+	
+	<div id="likebox">
+
+		<iframe src="//www.facebook.com/plugins/likebox.php?href={{ page.fb }}&amp;width&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=578558418821004" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:62px;" allowTransparency="true" style="border:none; overflow:hidden; width:240px; height:82px;"></iframe>
+
+	</div>
+
+	{% include post_nav.html %}
+	<br>
+	<div class="pay">
+		
+		<h4>Pay with:</h4>
+		<img src="/assets/pay/american-express.png" alt=""><img src="/assets/pay/visa.png" alt=""><img src="/assets/pay/mastercard.png" alt=""><img src="/assets/pay/discover.png" alt="">
+
+	</div>
+	<br>
+	<div class="social">
+		
+		<h4>Socialize with:</h4>
+		<a href=" {{ page.fb }} "><img src="/assets/social/facebook.png" alt=""></a>
+		<a href=" {{ page.linkedin }} "><img src="/assets/social/linkedin.png" alt=""></a>
+		<a href=" {{ page.pin }} "><img src="/assets/social/pinterest.png" alt=""></a>
+		<a href=" {{ page.gplus }} "><img src="/assets/social/google-plus.png" alt=""></a>
+		<a href=" {{ page.twitter }} "><img src="/assets/social/twitter.png" alt=""></a>
+
+	</div>
+
+</div>
+
+<div class="twelve columns omega">
+
+	{{ content }}
+
+</div>
+<div class="sixteen columns">
+
+	<div id="announcementbox">
+
+		<h1>Announcements</h1>
+		<iframe src="//www.facebook.com/plugins/likebox.php?href={{ page.fb }}&amp;width=960px&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=false&amp;appId=578558418821004" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:960pxpx; height:590px;" allowTransparency="true" width="960px" height="590px"></iframe>
+		<p>To close it click a button or use the ESC key.</p>
+
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	</div>
+
+</div>
