@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+<h3>{{ page.slogan }}</h3>
+
+<br>
+
+{% include slideshow.html %}
+
+<br>
+
+<div class="four columns alpha">
+	<h3>Pages</h3>
+	<ul>
+  	{% for post in site.posts %}
+    <li class="pages">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  	{% endfor %}
+</ul>
+</div>
+
+<div class="twelve columns alpha">
+
+	<h3>Events</h3>
+
+	{% include events.html %}
+	
+</div>

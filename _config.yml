@@ -1,0 +1,12 @@
+name: GOSWM Guide
+markdown: redcarpet
+pygments: true
+
+ftp_host: 'dmathieu.com'
+ftp_dir: '/public_html/go/jekyllguide'
+ftp_passive: false
+
+# optional
+ftp_port: 21                  # default 21
+ftp_username: 'goswmcom'     # default read from stdin
+ftp_password: 'OliverPope123!' # default read from stdin
